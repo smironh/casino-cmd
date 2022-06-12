@@ -2,22 +2,19 @@
 #1.0
 
 from os import system
-from colorama import init, Fore, Back, Style
-from termcolor import colored
 
 import sys
 import time
 import random
 
-init()
 
 system('cls')
-print(colored('''
+print('''
   ___    __ _   ___  (_)  _ __     ___
  / __|  / _` | / __| | | | '_ \   / _ \ 
 | (__  | (_| | \__ \ | | | | | | | (_) |
  \___|  \__,_| |___/ |_| |_| |_|  \___/
-'''))
+''')
 
 
 #  ___    __ _   ___  (_)  _ __     ___
@@ -306,6 +303,7 @@ def start():
 			info()
 		else:
 			print('вы отказались от игры(')
+			input()
 			break
 
 start()
